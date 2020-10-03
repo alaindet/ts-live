@@ -4,6 +4,7 @@
   "description": "Live coding with Nodemon and TypeScript",
   "main": "src/index.ts",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
