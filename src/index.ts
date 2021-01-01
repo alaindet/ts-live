@@ -1,1 +1,1 @@
-console.log('Live coding with Nodemon and TypeScript');
+console.log('Quick TypeScript is running...');

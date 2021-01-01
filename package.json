@@ -1,28 +1,34 @@
 {
-  "name": "ts-live",
-  "version": "1.0.0",
-  "description": "Live coding with Nodemon and TypeScript",
+  "name": "quick-typescript",
+  "version": "2.0.0",
+  "description": "Quick live coding with Nodemon and TypeScript",
   "main": "src/index.ts",
   "scripts": {
     "start": "nodemon",
+    "start:once": "npx ts-node ./src/index.ts",
+    "build": "rimraf ./build && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alaindet/ts-live.git"
+    "url": "git+https://github.com/alaindet/quick-typescript.git"
   },
   "keywords": [
     "typescript",
     "nodemon",
+    "quick",
     "live"
   ],
   "author": "Alain D'Ettorre <alain.det@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alaindet/ts-live/issues"
+    "url": "https://github.com/alaindet/quick-typescript/issues"
   },
-  "homepage": "https://github.com/alaindet/ts-live#readme",
+  "homepage": "https://github.com/alaindet/quick-typescript#readme",
   "devDependencies": {
-    "typescript": "^4.0.3"
+    "@types/node": "^14.14.17",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
   }
 }
